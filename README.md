@@ -11,9 +11,6 @@ This Weather App allows users to explore weather data for their desired location
 - Visibility
 - Geographical coordinates
 
-## Screenshot
-![Weather App Screenshot](./C:\Users\Nandhini\Pictures\Screenshots\Screenshot 2024-08-05 144419.png/imageweather.png)
-
 ## Built With
 - React.js - A JavaScript library for building user interfaces
 - CSS - Styling the app
