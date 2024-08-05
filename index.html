@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.jpeg" type="image/x-icon">
+
+</head>
+<body>
+
+    <div style="font-size: 50px; margin: 50px 20px; text-align: center; border-bottom: 1px solid; letter-spacing: 1px;">
+       Explore weather data for your desired location
+    </div>
+    <div class="container">
+        <div class="container1">
+            <div class="input">
+                <input type="text" placeholder="Search for places . . ." id="city">
+                <i class="fa-solid fa-magnifying-glass" onclick="fetchdata()"></i>
+            </div>
+            <div class="image">
+                <img src="images/haze.svg" alt="weather" id="image">
+
+            </div>
+            <div class="text1" id="degree">
+                <p>20 <sup>o</sup>C</p>
+            </div>
+            <div class="text2" id="today">
+               Monday, 16:00 PM
+            </div>
+            <div class="description">
+                <i class="fa-regular fa-snowflake"></i>
+                <div class="d-text" id="w-description">Mostly Cloudy</div>       
+            </div>
+            <div class="range-temp">
+                <div class="min-temp" >
+                    Min-Temp - <span id="min-temp">30</span><sup>o</sup>C
+                </div>
+                <div class="max-temp">
+                    Max-Temp - <span id="max-temp">30</span><sup>o</sup>C
+                </div>
+            </div>
+
+        </div>
+        <div class="container2">
+            <div class="title">
+                <div class="inline">
+                    Today's Highlights in <span id="city-name">Tirupur</span>
+                </div>
+                <div class="button">
+                    <button onclick="defaultFunction()">Present Location</button>
+                </div>
+            </div>
+            <u style="text-decoration: underline;"></u>
+            <div class="line1">
+                <div class="content">
+                    <div class="heading">Sunrise & Sunset</div>
+                    <div class="sunrise">
+                        <img src="images/sunrise.png" alt="sunrise">
+                        <p id="sunrise">6:00 AM</p>
+                    </div>
+                    <div class="sunrise">
+                        <img src="images/sunset.png" style="padding-right: 5px;" alt="sunset">
+                        <p id="sunset">6:00 AM</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="heading">Wind Status</div>
+                    <div class="text">
+                        <p id="wind-speed">7.70 </p><span> m/s</span>
+                    </div>
+                    <div class="report">
+                        <p id="weather-windSpeed">Normal</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="heading">Geo Coordinates</div>
+                    <div class="sunrise">
+                        <div class="coordinates">
+                            <span>Latitude:</span>
+                        <p id="Latitude">51.5085</p>
+                        </div>
+                    </div>
+                    <div class="sunrise">
+                        <div class="coordinates">
+                            <span>Longitude:</span>
+                        <p id="longitude">-0.1257</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="line1">
+                <div class="content">
+                    <div class="heading">Humidity <img src="images/humidity.png" alt="humidity"></div>
+                    <div class="text">
+                        <p id="humidity">7.70 </p><span> %</span>
+                    </div>
+                    <div class="report">
+                        <p id="weather-Humidity">Normal</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="heading">Visibility  <img src="images/eye.png" alt="Visibility"></div>
+                    <div class="text">
+                        <p id="Visibility">7.70 </p><span> m</span>
+                    </div>
+                    <div class="report">
+                        <p id="weather-Visibility">Normal</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="heading">Pressure  <img src="images/pressure.png" alt="humidity"></div>
+                    <div class="text">
+                        <p id="pressure">7.70 </p><span> hPa</span>
+                    </div>
+                    <div class="report">
+                        <p id="weather-pressure">Normal</p>
+                    </div>
+                </div>                
+            </div>
+
+        </div>
+    </div>
+
+    <div style="font-size: 30px; margin: 50px 20px; text-align: center; border-bottom: 1px solid; letter-spacing: 1px;">
+        Weather data from the previous day to next two days with 5-Hrs forecast
+    </div>
+
+    <div class="previousDays" id="previousDays">
+        <!-- <div class="containerDays">
+            <div class="date">21:05:2005</div>
+            <div class="image"><img src="images/clear.svg" alt="image"></div>
+            <div class="descriptions" style="color: rgba(0, 0, 0, 0.682); padding: 2px;">Broken clouds</div>
+            <div class="temperature">Temp: <span>35</span><sup>o</sup>C</div>
+        </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

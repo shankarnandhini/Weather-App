@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    background: #62555546;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #4d434328;
+}
+
+.container{
+    width: 900px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:450px;
+    border-radius: 20px;
+}
+
+.container .container1{
+    width: 300px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.container .container2{
+    width: 650px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.container .container1 .input{
+    width: 70%;
+    margin: 20px 10px 0 20px;
+    border-bottom: 1px solid #5b525269;
+}
+
+.container .container1 .input i{
+    color: #5b5252b1;
+    cursor: pointer;
+}
+
+.container1 .input input{
+    border: none;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.container1 .input input:focus{
+    border: none;
+}
+
+.container .container1 .image{
+    width: 100px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.container .container1 .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.container .container1 .text1{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.container .container1 .text2{
+    margin-left: 30px;
+    color: rgba(0, 0, 0, 0.682);
+}
+
+.container .container1 .description{
+    width: 100%;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .container1 .description i{
+    color: rgb(255, 208, 0);
+}
+
+.container1 .description .d-text{
+    margin-left: 10px;
+}
+
+.container .container1 .range-temp{
+    height: 100px;
+    width: 90%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.682);
+}
+
+.container .container2{
+    background: #6255550e;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.container .container2 .title{
+    width: 100%;
+    margin-top: 20px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container2 .title .button
+{
+    margin-right: 25px;
+}
+
+.container2 .title .button button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background: rgba(0, 221, 255, 0.278);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container2 .title .button button:hover{
+    background: rgba(0, 221, 255, 0.686);
+}
+
+.container .container2 .line1{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.container2 .line1 .content{
+    width: 150px;
+    background: #fff;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.168);
+}
+
+.container2 .line1 .content .heading{
+    width: 100%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.682);
+    display: flex;
+    align-items: center;
+}
+
+.container2 .line1 .content .report{
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 2px;
+
+}
+
+.container2 .line1 .content .heading img{
+    width: 30px;
+    padding-left: 10px;    
+}
+
+.line1 .content .text
+{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.line1 .content .text p{
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.line1 .content .sunrise{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;    
+}
+
+.line1 .content .sunrise .coordinates{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content .sunrise .coordinates p{
+    color: rgba(0, 0, 0, 0.682);
+    padding-left: 10px;
+}
+
+.line1 .content .sunrise p{
+    font-size: 1em;
+}
+
+.previousDays{
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0 50px 0;
+}
+
+.previousDays .containerDays{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    margin:10px;    
+}
+
+.containerDays .date{
+    width: 100%;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    color:red;
+}
+
+.containerDays .image{
+    width: 40px;
+    height:40px;
+    padding: 5px;
+}
+
+.containerDays .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.containerDays .temperature{
+    color: blue;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .container .container1{
+        background: #6255550e;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container .container2{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .container .container1 .input{
+        width: 50%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+    }
+
+    .container .container1 .input i{
+        padding-right: 10px;
+    }
+
+    .container .container1 .input input{
+        width: 100%;
+    }
+    
+    .container .container1 .range-temp, .container .container1 .text1,.container .container1 .text2, .container .container1 .description{
+        width: auto;
+    }
+
+    .container .container2 .line1{
+        margin: 10px;
+    }
+
+    .container .container2 .line1 .content .heading{
+        width: auto;       
+        font-size: 10px;
+    }
+
+    .container .container2 .line1 .content .sunrise, .container .container2 .line1 .content .sunrise .coordinates{
+        font-size: 8px;
+    }
+
+    .container .container2 .line1 .content .text p{
+        font-size: 20px;
+    }
+}
+
